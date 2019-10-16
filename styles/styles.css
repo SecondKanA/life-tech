@@ -153,6 +153,44 @@ a {
   font-weight: normal;
 }
 
+/* ABOUT */
+.about-section > .container {
+  max-width: 750px;
+}
+
+.text-about {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.in-number-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.in-number-list-item {
+  margin: 0 25px;
+}
+
+.in-number-value {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background: #C2C0C0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.in-number-prop {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
 /* OUR TEAM */
 .our-team > .container {
   max-width: 958px;
