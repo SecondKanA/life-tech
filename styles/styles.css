@@ -63,7 +63,6 @@ a {
   background: #030303 url('../images/header-background.jpg') no-repeat;
   background-size: cover;
   color: #fff;
-  padding-top: 20%;
 }
 
 .header .main-heading {
@@ -71,6 +70,9 @@ a {
   width: 400px;
   margin: auto;
   font-size: 36px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%);
 }
 
 .topbar {
