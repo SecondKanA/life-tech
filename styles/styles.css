@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic');
 
-/*
+/* * * * * * * * * * * * * * * * * * * * * *\
  * Common styles
- * * * * * * * * * * * * * * * * * * * * * */
+\* * * * * * * * * * * * * * * * * * * * * */
 *,
 *::after,
 *::before {
@@ -63,7 +63,6 @@ a {
   background: #030303 url('../images/header-background.jpg') no-repeat;
   background-size: cover;
   color: #fff;
-  padding-top: 20%;
 }
 
 .header .main-heading {
@@ -71,6 +70,8 @@ a {
   width: 400px;
   margin: auto;
   font-size: 36px;
+  position: relative;
+  top: 40%;
 }
 
 .topbar {
@@ -141,6 +142,8 @@ a {
 }
 
 .service-icon {
+  width: 75px;
+  height: 75px;
   margin-right: 25px;
   object-fit: contain;
 }
@@ -206,3 +209,58 @@ a {
   height: 25px;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * *\
+ * Media queries
+\* * * * * * * * * * * * * * * * * * * * * */
+
+/* LAPTOB */
+@media (max-width: 1024px) {
+  .our-service {
+    padding-bottom: 60px;
+  }
+
+  .members-list {
+    margin-top: 60px;
+  }
+
+  .heading {
+    padding-top: 40px;
+  }
+
+  .our-team > .container {
+    padding-bottom: 60px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .topbar-wrapper,
+  .footer > .container {
+    max-width: 550px;
+  }
+
+  .logo-box {
+    padding: 7px 0 10px;
+  }
+
+  .services-list {
+    max-width: 400px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .service {
+  }
+
+  .service-box:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+  .header .main-heading {
+    font-size: 30px;
+    max-width: 350px;
+  }
+}
